@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Ратников](https://up.htmlacademy.ru/htmlcss/21/user/771149).
-* Наставник: [Алексей Удод](https://htmlacademy.ru/profile/id523387).
+* Наставник: 'Алексей Удод'(https://htmlacademy.ru/profile/id523387).
 
 ---
 
