@@ -12,22 +12,64 @@
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
-          <li><a href="photovideo.html"></a>фото и видео</li>
-          <li><a href="state-map.html"></a>карта штата</li>
-          <li class="site-navigation-current"><a href="hotels.html"></a>гостинницы>
+          <li><a href="photovideo.html"></a>Фото и видео</li>
+          <li><a href="state-map.html"></a>Карта штата</li>
+          <li class="site-navigation-current"><a href="hotels.html"></a>Гостиницы>
           </li>	
         </ul>
       </nav>
    </header>
    <main>
    	<h1 class="visually-hidden">Catalog Hotels</h1>
-   	<section class="filters">
-   		<img src="#" alt="IMG_9190">
-   		<!-- Здесь будет форма-->
+   	<section class="filters-form">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="filter-form-col">
+          <legend>Инфраструктура:</legend>
+          <input type="checkbox" id="check1" checked>
+          <label for="check1">Бассейн</label>
+          <input type="checkbox" id="check2">
+          <label for="check2">Парковка</label>
+          <input type="checkbox" id="check3">
+          <label for="check3">Wi-fi</label>
+        </fieldset>
+         <fieldset class="filter-form-col">
+          <legend>Тип жилья:</legend>
+          <input type="checkbox" id="check4" checked>
+          <label for="check4">Гостиница</label>
+          <input type="checkbox" id="check5" checked>
+          <label for="check5">Мотель</label>
+          <input type="checkbox" id="check6" checked>
+          <label for="check6">Апартаменты</label>
+        </fieldset>
+
+        <fieldset class="filter-form-col">
+          <legend>Стоимость в сутки (р):</legend>
+          <div class="range">
+            <div class="range-fields">
+              <div class="range-filed">
+                <label for="range1">От</label>
+                <input type="text" id="range1">
+              </div>
+              <div class="range-fieled">
+                <label for="range1">До</label>
+                <input type="text" id="range2">
+              </div>
+            </div>
+            <div class="range-bar">
+              <div class="range-scale">Шкала
+              </div>
+              <button class="range-btn range-btn-from" type="button">От</button>
+              <button class="range-btn range-btn-to" type="button">До</button>
+            </div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
+        </fieldset>
+      </form>
     </section>
+
     <section class="catalog">
     	<div class="content">
-    		<h3>Найдено:3</h3>
+    		<h2>Найдено:3</h2>
     		<div class="soring">
     		  <p>Сортировка:</p>
     		   <div class="sorting-link">
@@ -44,7 +86,7 @@
         <ul class="catalog-list">
         	<li class="catalog-item">
         		<img src="img/amara.jpg" width="135" height="90" alt="Amara rasort">
-        		<h3>Amara resort & spa</h3>
+        		<h2>Amara resort & spa</h2>
         		<p >Гостинница</p>
         		<b>От 4000 Р.</b>
         		<a class="button-info" href="#">Подробнее</a>
@@ -54,7 +96,7 @@
         	</li>
         	<li class="catalog-item">
         		<img src="img/desert.jpg" width="135" height="90"  alt="Desert quail">
-        		<h3>Desert Quail inn</h3>
+        		<h2>Desert Quail inn</h2>
         		<p >Мотель</p>
         		<b>От 3000 Р.</b>
         		<a class="button-info" href="#">Подробнее</a>
@@ -64,7 +106,7 @@
         	</li>
         	<li class="atalog-item">
         		<img src="img/villas.jpg" width="135" height="90" alt="Villas">
-        		<h3>Villas At Poco Diablo</h3>
+        		<h2>Villas At Poco Diablo</h2>
         		<p >Апартаменты</p>
         		<b>От 2000 Р.</b>
         		<a class="button-info" href="#">Подробнее</a>
@@ -86,7 +128,7 @@
         </div>
         <div class="footer-logo">
           <p>Weesite by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><<img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
           </a>
         </div>
         </footer>

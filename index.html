@@ -22,67 +22,101 @@
           <li><a href="hotels.html">гостинницы></a></li>	
         </ul>
       </nav>
-      <!--фоновая картинка будет вместе с заголовками-->
-      <img src="#" width="60" height="60" alt="Фоновое фото">
-     </header>
+      <div class="caption"> 
+      <img src="img/welcom-sedona.png" width="458" height="352" alt="Welcom to the gorgeous Sedona">
+    </div>
+    </header>
       <main >
-          <h1 class="visually-hidden">Sedona</h1>
         <section>
           <div class="titel">
-            <h3>Седона-небольшой городок в Аризоне, заслуживающего большего!</h3>
+            <h1>Седона-небольшой городок в Аризоне, заслуживающего большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>  
          <div class="number-one">
-            <h3>Настоящий городок</h3>
+            <h2>Настоящий городок</h2>
             <p>-№1- 
               Седона-не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/city.jpg" width="800" hegtht="258"  alt="Городок">
+            <img src="img/city.jpg" width="800" height="258"  alt="Городок">
           </div>
           <div class="services">
             <img src="img/icon-1.svg" alt="Жильё">
-            <h3>Жильё</h3>
+            <h2>Жильё</h2>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
           <div class="services">
             <img src="img/icon-3.svg" alt="Еда">
-            <h3>Еда</h3>
+            <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="services">
             <img src="img/icon-2.svg" alt="Сувениры">
-            <h3>Сувениры</h3>
+            <h2>Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
           <img src="img/canyon.jpg" width="800" height="258" alt="каньон">
           <div class="number-two">
-            <h3>Там есть мост дьявола</h3>
+            <h2>Там есть мост дьявола</h2>
             <p>-№2-
               Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
           <div class="services-item">
-            <h3>Небольшая площадь</h3>
+            <h2>Небольшая площадь</h2>
             <p>-№3-
               Все достопримечательности находятся очень близко</p>
           </div>
           <div class="services-item">
-            <h3>Красивая дорога</h3>
+            <h2>Красивая дорога</h2>
             <p> -№4-
               Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="services-item">
-            <h3>Мало туристов</h3>
+            <h2>Мало туристов</h2>
             <p>-№5-
               Большинство едет в гранд каньон и толпится там</p>
           </div>
         </section>
-        <section>
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполакаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <!-- Здесь будет форма -->
-          <img src="img/map-usual.jpg" width="1200" height="475" alt="map">
-        </section>
-       </main>
-       <footer class="maib-footer">
+        <div class="search" >
+          <h2 class="search-title">Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, 
+             и мы покажем вам лучшие  предложения гостиниц в седоне</p>
+          <h2>Поиск гостиници в седоне</h2>
+        </div>
+        <div class="map">
+         <div class="map-canvas">Интерактивная карта</div>
+         <div class="search-form">
+          <form action="#" method="">
+           <div class="search-form-row">
+             <label class="search-form-label" for="from">Дата заезда:</label>
+             <input class="search-form-field" type="text" id="from">
+             <button type="button" class="search-form-calendar">Календарь</button>
+           </div>
+           <div class="search-form-row">
+             <label class="search-form-label" for="to">Дата выезда:</label>
+             <input class="search-form-field" type="text" id="to">
+             <button type="button" class="search-form-calendar">Календарь</button>
+           </div>
+           <div class="search-form-row">
+              <div class="search-form-col">
+               <label class="search-form-label" for="number1">Взрослые:</label>
+               <div class="number">
+                 <button class="number-btn number-btn-minus">Минус</button>
+                 <input class="number-field" type="text" id="number1">
+                 <button class="number-btn number-btn-plus">Плюс</button>
+               </div>
+              </div>
+             
+              <div class="search-form-col">
+               <label class="search-form-label" for="number2">Дети:</label>
+               <div class="number">
+                 <button class="number-btn number-btn-minus">Минус</button>
+                 <input class="number-field" type="text" id="number2">
+                 <button class="number-btn number-btn-plus">Плюс</button>
+               </div>
+              </div>
+            </div>
+          </form>
+    </main>
+    <footer class="maib-footer">
         <h3>#Visitsedonf</h3>
         <div class="footer-social">
           <ul>
@@ -97,7 +131,7 @@
           </a>
        </div>
       </footer>
-    </body>
+  </body>
 </html>   
 
 
