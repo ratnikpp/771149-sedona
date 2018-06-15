@@ -5,124 +5,135 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
-
     <header class="main-header">
       <nav class="main-navigation">
       	<a class="main-header-logo">
       	<img src="img/header-logo.png" width="140" height="72" alt="Логотип Sedona">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">информация</a></li>
-          <li><a href="photovideo.html">фото и видео</a>
+          <li><a href="info.html" aria-label="Информация">Информация</a></li>
+          <li><a href="photovideo.html" aria-label="Фото и видео">Фото и видео</a>
           </li>
-          <li><a href="state-map.html">карта штата</a></li>
-          <li><a href="hotels.html">гостинницы></a></li>	
+          <li><a href="state-map.html" aria-label="Карта штата">Карта штата</a></li>
+          <li><a href="hotels.html" aria-label="Гостиницы">Гостиницы></a></li>	
         </ul>
       </nav>
       <div class="caption"> 
-      <img src="img/welcom-sedona.png" width="458" height="352" alt="Welcom to the gorgeous Sedona">
-    </div>
+        <img src="img/welcom-sedona.png" width="458" height="352" alt="Welcom to the gorgeous Sedona">
+      </div>
     </header>
       <main >
-        <section>
-          <div class="titel">
-            <h1>Седона-небольшой городок в Аризоне, заслуживающего большего!</h1>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </div>  
-         <div class="number-one">
-            <h2>Настоящий городок</h2>
-            <p>-№1- 
+        <section class="reasons">
+          <div class="reasons-header">
+            <h1 class="reasons-title">Седона-небольшой городок в Аризоне, заслуживающего большего!</h1>
+            <p class="reasons-discription">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div> 
+          <div class="reasons row"> 
+            <div class="reason-blue">
+              <h2 class="reason-title">Настоящий городок</h2>
+              <p class="reason-text">-№1- 
               Седона-не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/city.jpg" width="800" height="258"  alt="Городок">
+            </div>
+            <div class="reason-picture">
+            <img src="img/city.jpg" width="800" height="401"  alt="Городок">
+            </div>
           </div>
-          <div class="services">
+
+          <div class="reasons-icon-home ">
             <img src="img/icon-1.svg" alt="Жильё">
-            <h2>Жильё</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <h2 class="reason-title">Жильё</h2>
+            <p class="reason-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </div>
-          <div class="services">
+          <div class="reason-icon-food">
             <img src="img/icon-3.svg" alt="Еда">
             <h2>Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="services">
+          <div class="reason-icon-gift">
             <img src="img/icon-2.svg" alt="Сувениры">
-            <h2>Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
+            <h2 class="reason-title">Сувениры</h2>
+            <p class="reason-text">Не только китайского, но и местного производства!</p>
           </div>
-          <img src="img/canyon.jpg" width="800" height="258" alt="каньон">
-          <div class="number-two">
-            <h2>Там есть мост дьявола</h2>
-            <p>-№2-
+
+          <div class="reasons-row">
+            <div class="reason-picture">
+              <img src="img/canyon.jpg" width="800" height="400" alt="каньон">
+            </div>
+            <div class="reason-blue">
+            <h2 class="reason-title">Там есть мост дьявола</h2>
+            <p class="reason-text">-№2-
               Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </div>
-          <div class="services-item">
-            <h2>Небольшая площадь</h2>
-            <p>-№3-
+
+          <div class="reasons-row">
+            <div class="reason-gray">
+              <h2 class="reason-title">Небольшая площадь</h2>
+              <p class="reason-text">-№3-
               Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="services-item">
-            <h2>Красивая дорога</h2>
-            <p> -№4-
+            </div>
+            <div class="reason-gray">
+              <h2 class="reason-title">Красивая дорога</h2>
+              <p class="reason-text"> -№4-
               Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="services-item">
-            <h2>Мало туристов</h2>
-            <p>-№5-
+            </div>
+            <div class="reason-gray">
+              <h2 class="reason-title">Мало туристов</h2>
+              <p class="reason-text">-№5-
               Большинство едет в гранд каньон и толпится там</p>
+            </div>
           </div>
         </section>
-        <div class="search" >
+
+        <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, 
+          <p class="search-description">Укажите предполагаемые даты поездки, 
              и мы покажем вам лучшие  предложения гостиниц в седоне</p>
-          <h2>Поиск гостиници в седоне</h2>
-        </div>
-        <div class="map">
-         <div class="map-canvas">Интерактивная карта</div>
-         <div class="search-form">
-          <form action="#" method="">
-           <div class="search-form-row">
+          <button type="button" class="btn-search" aria-label="Поиск">Поиск гостиници в седоне</button>
+          <div class="search-form">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="search-form-row">
              <label class="search-form-label" for="from">Дата заезда:</label>
              <input class="search-form-field" type="text" id="from">
-             <button type="button" class="search-form-calendar">Календарь</button>
-           </div>
-           <div class="search-form-row">
+             <button type="button" class="search-form-calendar" aria-label="Календарь">Календарь</button>
+            </div>
+            <div class="search-form-row">
              <label class="search-form-label" for="to">Дата выезда:</label>
              <input class="search-form-field" type="text" id="to">
-             <button type="button" class="search-form-calendar">Календарь</button>
-           </div>
-           <div class="search-form-row">
+             <button type="button" class="search-form-calendar" aria-label="Календарь">Календарь</button>
+            </div>
+            <div class="search-form-row">
               <div class="search-form-col">
                <label class="search-form-label" for="number1">Взрослые:</label>
                <div class="number">
-                 <button class="number-btn number-btn-minus">Минус</button>
+                 <button type="button" class="number-btn number-btn-minus" aria-label="Минус">Минус</button>
                  <input class="number-field" type="text" id="number1">
-                 <button class="number-btn number-btn-plus">Плюс</button>
+                 <button type="button" class="number-btn number-btn-plus" aria-label="Плюс">Плюс</button>
                </div>
               </div>
-             
               <div class="search-form-col">
                <label class="search-form-label" for="number2">Дети:</label>
                <div class="number">
-                 <button class="number-btn number-btn-minus">Минус</button>
+                 <button type="button" class="number-btn number-btn-minus" aria-label="Минус">Минус</button>
                  <input class="number-field" type="text" id="number2">
-                 <button class="number-btn number-btn-plus">Плюс</button>
+                 <button type="button" class="number-btn number-btn-plus" aria-label="Плюс">Плюс</button>
                </div>
-              </div>
+             </div>
+           </div>
+           <div class="button"> 
+              <input type="submit" value="Найти">
             </div>
           </form>
+        </div>
+      </section>
     </main>
     <footer class="maib-footer">
-        <h3>#Visitsedonf</h3>
+        <h2>#Visitsedonf</h2>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Твитер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Youtube</a></li>
+            <li><a class="social-button" href="#" aria-label="Твитер">Твитер</a></li>
+            <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a class="social-button" href="#" aria-label="Youtube">Youtube</a></li>
           </ul>
         </div>
         <div class="footer-logo">

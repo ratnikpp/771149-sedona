@@ -11,17 +11,17 @@
       	<img src="img/header-logo.png" width="140" height="72"  alt="Логотип Sedona">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photovideo.html"></a>Фото и видео</li>
-          <li><a href="state-map.html"></a>Карта штата</li>
-          <li class="site-navigation-current"><a href="hotels.html"></a>Гостиницы>
+          <li><a href="info.html" aria-label="Информация">Информация</a></li>
+          <li><a href="photovideo.html" aria-label="Фото и видео"></a>Фото и видео</li>
+          <li><a href="state-map.html" aria-label="Карта штата"></a>Карта штата</li>
+          <li class="site-navigation-current"><a href="hotels.html" aria-label="Гостиницы"></a>Гостиницы>
           </li>	
         </ul>
       </nav>
    </header>
    <main>
-   	<h1 class="visually-hidden">Catalog Hotels</h1>
-   	<section class="filters-form">
+    <section class="filters-form">
+      <h1 class="visually-hidden">Catalog Hotels</h1>
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="filter-form-col">
           <legend>Инфраструктура:</legend>
@@ -58,60 +58,60 @@
             <div class="range-bar">
               <div class="range-scale">Шкала
               </div>
-              <button class="range-btn range-btn-from" type="button">От</button>
-              <button class="range-btn range-btn-to" type="button">До</button>
+              <button type="button" class="range-btn range-btn-from" aria-label="От">От</button>
+              <button type="button" class="range-btn range-btn-to" aria-label="До">До</button>
             </div>
           </div>
-          <button class="btn-transparent" type="submit">Показать</button>
+          <button class="btn-transparent" type="submit" aria-label="Показать">Показать</button>
         </fieldset>
       </form>
     </section>
 
     <section class="catalog">
     	<div class="content">
-    		<h2>Найдено:3</h2>
+    		<h2 class="">Найдено:3</h2>
     		<div class="soring">
     		  <p>Сортировка:</p>
     		   <div class="sorting-link">
-    		     <a href="#" class="active">По цене</a>
+    		     <a href="#" class="active" aria-label="По цене">По цене</a>
     		     <a href="#">По типу</a>
-    		     <a href="#">По рейтингу</a>
+    		     <a href="#" aria-label="По рейтингу">По рейтингу</a>
     		   </div>
     		   <div class="icon-dir">
-    		   	<img src="#"  alt="icon-up-dir">
-    		   	<img src="#" alt="icon-down-dir">
+    		   	<img src="img/icon-up-dir"  alt="icon-up-dir">
+    		   	<img src="img/icon-down-dir" alt="icon-down-dir">
     		   </div>
             </div>
         </div>
         <ul class="catalog-list">
         	<li class="catalog-item">
         		<img src="img/amara.jpg" width="135" height="90" alt="Amara rasort">
-        		<h2>Amara resort & spa</h2>
-        		<p >Гостинница</p>
+        		<h2 class="catalog-title">Amara resort & spa</h2>
+        		<p class="catalog-text">Гостинница</p>
         		<b>От 4000 Р.</b>
-        		<a class="button-info" href="#">Подробнее</a>
-        		<a class="batton-booking" href="#">Забронировать</a>
-        		<p  class="reting">Рейтинг:8,5</p>
+        		<a class="button-info" href="#" aria-label="Подробнее">Подробнее</a>
+        		<a class="batton-booking" href="#" aria-label="Забронировать">Забронировать</a>
+        		<p  class="reting-text">Рейтинг:8,5</p>
         		<img src="#" alt="star">
         	</li>
         	<li class="catalog-item">
         		<img src="img/desert.jpg" width="135" height="90"  alt="Desert quail">
-        		<h2>Desert Quail inn</h2>
-        		<p >Мотель</p>
+        		<h2 class="catalog-title">Desert Quail inn</h2>
+        		<p class="catalog-text">Мотель</p>
         		<b>От 3000 Р.</b>
-        		<a class="button-info" href="#">Подробнее</a>
-        		<a class="batton-booking" href="#">Забронировать</a>
-        		<p  class="reting">Рейтинг:8,9</p>
+        		<a class="button-info" href="#" aria-label="Подробнее">Подробнее</a>
+        		<a class="batton-booking" href="#" aria-label="Забронировать">Забронировать</a>
+        		<p  class="reting-text">Рейтинг:8,9</p>
         		<img src="#" alt="star">
         	</li>
-        	<li class="atalog-item">
+        	<li class="catalog-item">
         		<img src="img/villas.jpg" width="135" height="90" alt="Villas">
-        		<h2>Villas At Poco Diablo</h2>
-        		<p >Апартаменты</p>
+        		<h2 class="catalog-title">Villas At Poco Diablo</h2>
+        		<p class="catalog-text">Апартаменты</p>
         		<b>От 2000 Р.</b>
-        		<a class="button-info" href="#">Подробнее</a>
-        		<a class="batton-booking" href="#">Забронировать</a>
-        		<p  class="reting">Рейтинг:9,2</p>Б
+        		<a class="button-info" href="#" aria-label="Подробнее">Подробнее</a>
+        		<a class="batton-booking" href="#" aria-label="Забронировать">Забронировать</a>
+        		<p class="reting-text">Рейтинг:9,2</p>Б
         		<img src="#" alt="star">
         	</li>
           </ul>
@@ -121,9 +121,9 @@
         <h3>#Visitsedonf</h3>
         <div class="foter-social">
           <ul>
-            <li><a class="social-button" href="#">Твитер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Youtube</a></li>
+            <li><a class="social-button" href="#" aria-label="Твитер">Твитер</a></li>
+            <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a class="social-button" href="#" aria-label="Youtube">Youtube</a></li>
           </ul>
         </div>
         <div class="footer-logo">
