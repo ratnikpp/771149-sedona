@@ -3,10 +3,6 @@ body {
 	padding: 0;
 
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 400;
-	color: #333333;
 	text-transform: uppercase;
 
 	background-color: #f2f2f2;
@@ -17,7 +13,7 @@ body {
 .inner-page {
 	background-color: #fefefe;
 	margin: 0;
-  padding: 0;
+    padding: 0;
 }
 
 a {
@@ -53,6 +49,9 @@ a {
 	background-color: #000000;
 	background-image: url(../img/background-photo.png);
     background-repeat: no-repeat;
+    width: 1200px;
+    height: 510;
+
 }
 
 .advantage-header {
@@ -65,6 +64,12 @@ a {
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+}
+
+.advantage-header p {
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333; 
 }
 
 .advantage {
@@ -86,6 +91,12 @@ a {
 	font-weight: 700;
 }
 
+.advantage-first p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400px;
+}
+
 .advantage-second {
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -96,6 +107,12 @@ a {
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
+}
+
+.advantage-second p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
 }
 
 .advantage-third {
@@ -110,6 +127,13 @@ a {
 	color: #000000;
 }
 
+.advantage-third p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+}
+
 .advantage-fourth {
 	background-color: #eeeeee;
 	text-align: center;
@@ -122,6 +146,13 @@ a {
 	color: #000000;
 }
 
+.advantage-fourth p {
+    font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+}
+
 .advantage-fifth {
 	background-color: #eeeeee;
 	text-align: center;
@@ -132,6 +163,13 @@ a {
 	line-height: 21px;
 	font-weight: 700;
 	color: #000000;
+}
+
+.advantage-fifth p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
 }
 
 .more-advantages {
@@ -150,6 +188,13 @@ a {
 	color: #000000;
 }
 
+.advantage-home p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+}
+
 .advantage-food {
     background-color: #ffffff;
 	text-align: center;
@@ -160,6 +205,13 @@ a {
 	line-height: 21px;
 	font-weight: 700;
 	color: #000000;
+}
+
+.advantage-food p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
 }
 
 .advantage-gift {
@@ -174,6 +226,13 @@ a {
 	color: #000000;
 }
 
+.advantage-gift p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
+}
+
 .search {
     background-color: #ffffff;
     text-align: center;
@@ -184,6 +243,13 @@ a {
 	line-height: 36px;
 	font-weight: 700;
 	color: #000000;
+}
+
+.search p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	color: #333333;
 }
 
 .btn-search {
@@ -327,6 +393,10 @@ a {
 
 }
 
+.footer-social svg {
+	stroke: #81b3d2;
+}
+
 .footer-logo {
 
 }
@@ -334,19 +404,27 @@ a {
 .footer-logo a {
 	font-size: 14px;
 	line-height: 26px;
-	color: #000000;
+
+
+	
+
 }
 
-.footer-logo a {
+
+.footer-logo svg {
+	width: 115px;
+	height: 41px;
 	fill: #231f20;
+	
+	
 }
 
-.footer-logo a:hover,
-.footer-logo a:focus {
-	fill: #81b3d2;
+.footer-logo svg:hover,
+.footer-logo svg:focus {
+	fill: #81b3d2
 }
 
-.footer-logo svg:active {
+.main-footer svg:active {
     fill: #bdbbbc;
 }
 
