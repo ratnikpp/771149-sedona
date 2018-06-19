@@ -199,7 +199,8 @@ a {
     color: #ffffff;
 }
 
-.btn-search: hover {
+.btn-search:hover,
+.btn-search:focus {
 	background-color: #604e43;
 }
 
@@ -231,29 +232,66 @@ a {
     color: #000000;
 }
 
-.search-form-field:hover {
+.search-form-field:hover,
+.search-form-field:focus {
 	background-color: #ebebeb
 }
 
-.search-form-field:focus {
-	background-color: #ffffff; 
-}
-
-.search-form-calendar {
-    background-color: #dcdcdc;
-}
-
-
-.search-form-calendar:hover {
+.search-form-field:active {
 	background-color: #ffffff;
 }
 
-.search-form-calendar:active {
-	background-color: #98c1da;
+.search-form-row svg {
+    fill: #cacaca;
 }
 
 
-.search-btn {
+.search-form-row svg:hover,
+.search-form-row svg:focus {
+	fill: #000000;
+}
+
+.search-form-row svg:active {
+	fill: #81b3d2;
+}
+
+.btn-minus {
+	background-image: url("../img/minus.png");
+	width: 38px;
+	height: 38px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-minus:hover,
+.btn-minus:focus {
+	background-image: url("../img/minus-black.png");
+}
+
+.btn-minus:active {
+	background-image: url("../img/minus-blue.png");
+}
+
+.btn-plus {
+	background-image: url("../img/plus.png");
+	width: 38px;
+	height: 38px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-plus:hover,
+.btn-plus:focus {
+	background-image: url("../img/plus-black.png");
+}
+
+.btn-plus:active {
+	background-image: url("../img/plus-blue.png");
+}
+
+
+
+.find-btn {
 	background-color: #81b3d2;
 	font-size: 21px;
 	line-height: 26px;
@@ -265,12 +303,12 @@ a {
 
 }
 
-.search-btn:hover,
-.search-btn:focus {
+.find-btn:hover,
+.find-btn:focus {
     background-color: #669ec0;
 }
 
-.search-btn:active {
+.find-btn:active {
 	background-color: #5496bd;
 }
 
@@ -293,8 +331,23 @@ a {
 
 }
 
-.footer-logo p {
+.footer-logo a {
+	font-size: 14px;
 	line-height: 26px;
+	color: #000000;
+}
+
+.footer-logo a {
+	fill: #231f20;
+}
+
+.footer-logo a:hover,
+.footer-logo a:focus {
+	fill: #81b3d2;
+}
+
+.footer-logo svg:active {
+    fill: #bdbbbc;
 }
 
 #active {
