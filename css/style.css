@@ -4,6 +4,7 @@ body {
 
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
+	font-size: 14px;
 
 	background-color: #f2f2f2;
 	background-position: top center;
@@ -18,10 +19,26 @@ body {
 
 a {
 	text-decoration: none;
-}	
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+
+	width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 .main-navigation {
-	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: 700;
@@ -67,7 +84,6 @@ a {
 }
 
 .advantage-header p {
-	font-size: 14px;
 	line-height: 26px;
 	color: #333333; 
 }
@@ -92,7 +108,6 @@ a {
 }
 
 .advantage-first p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400px;
 }
@@ -110,7 +125,6 @@ a {
 }
 
 .advantage-second p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 }
@@ -128,7 +142,6 @@ a {
 }
 
 .advantage-third p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
@@ -147,8 +160,7 @@ a {
 }
 
 .advantage-fourth p {
-    font-size: 14px;
-	line-height: 21px;
+    line-height: 21px;
 	font-weight: 400;
 	color: #333333;
 }
@@ -166,7 +178,6 @@ a {
 }
 
 .advantage-fifth p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
@@ -189,7 +200,6 @@ a {
 }
 
 .advantage-home p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
@@ -208,7 +218,6 @@ a {
 }
 
 .advantage-food p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
@@ -227,7 +236,6 @@ a {
 }
 
 .advantage-gift p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
@@ -246,7 +254,6 @@ a {
 }
 
 .search p {
-	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333333;
@@ -404,10 +411,7 @@ a {
 .footer-logo a {
 	font-size: 14px;
 	line-height: 26px;
-
-
-	
-
+	color: #000000;
 }
 
 
@@ -427,6 +431,35 @@ a {
 .main-footer svg:active {
     fill: #bdbbbc;
 }
+
+
+.footer-social {
+	width: 148px;
+	text-align: center;
+}
+
+.footer-social ul {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.social-button {
+	width: 48px;
+	height: 46px;
+	text-align: center;
+
+	background-color: #81b3d2;
+}
+
+.social-button svg:hover,
+.social-button svg:focus {
+	background-color: #669ec0;
+}
+
+.social-button svg:active {
+	background-color: #5496bd;
+}
+
 
 #active {
 	color: #766357;
