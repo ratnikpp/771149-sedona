@@ -1,6 +1,10 @@
 body {
+
 	margin: 0;
 	padding: 0;
+
+	min-width: 1280px;
+	
 
 	font-family: "PT Sans", Arial, sans-serif;
 	text-transform: uppercase;
@@ -8,6 +12,8 @@ body {
 
 	background-color: #f2f2f2;
 	background-position: top center;
+	background-size: 1280 auto;
+	
 	background-repeat: no-repeat;
 }
 
@@ -19,6 +25,11 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -37,22 +48,68 @@ a {
     overflow: hidden;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.main-header {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
 
 .main-navigation {
 	line-height: 26px;
 	color: #000000;
 	font-weight: 700;
-
 	background-color: #ffffff;
-
 }
+
 
 .site-navigation {
-	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 56px;
+    list-style: none;
+    display: flex;
+	
+	width: 100%;
+	
+	flex-wrap: wrap;
 }
+
+.site-navigation-info {
+	display: block;
+	padding: 15px 75px 15px 72px;
+}
+
+.site-navigation-photo {
+	display: block;
+	padding: 15px 69px 15px 73px;
+}
+
+.site-navigation-map {
+	display: block;
+	padding: 15px 74px 15px 76px;
+	padding-left: 320px;
+}
+
+ .site-navigation-hotels {
+	display: block;
+	padding: 15px 73px 15px 88px;
+}
+
 .site-navigation a {
 	color: #000000;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #81b3d2;
@@ -64,16 +121,32 @@ a {
 
 .caption {
 	background-color: #000000;
-	background-image: url(../img/background-photo.png);
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 510;
+	
 
+}
+
+.header-logo {
+	display: block;
+	position: absolute;
+	vertical-align: top;
+	
+}
+
+.caption-main {
+	height: 508px;
+	display: flex;
+	justify-content: center;
+	
+	background-image: url("../img/background-photo.jpg");
+	
+	align-items: center;
+	margin: 0 auto; 
 }
 
 .advantage-header {
 	background-color: #ffffff;
 	text-align: center;
+	
 }
 
 .advantage-header h1 {
@@ -87,18 +160,39 @@ a {
 	line-height: 26px;
 	color: #333333; 
 }
-
+  
 .advantage {
    
 }
 
 .advantage-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 1024px; 
+	margin-bottom: 0;
 }
+
+
+
 
 .advantage-first {
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-align: center;
+	width: 400px;
+	height: 256px;
+	
+
+}
+
+.advantege-picture {
+	width: 800px;
+	height: 400px;
 }
 
 .advantage-first h3 {
@@ -109,13 +203,16 @@ a {
 
 .advantage-first p {
 	line-height: 21px;
-	font-weight: 400px;
+	font-weight: 400;
 }
 
 .advantage-second {
 	background-color: #81b3d2;
 	color: #ffffff;
 	text-align: center;
+	width: 400px;
+	height: 256px;
+
 }
 
 .advantage-second h3 {
@@ -132,6 +229,9 @@ a {
 .advantage-third {
 	background-color: #eeeeee;
 	text-align: center;
+	width: 400px;
+	height: 256px;
+	
 }
 
 .advantage-third h3 {
@@ -150,6 +250,9 @@ a {
 .advantage-fourth {
 	background-color: #eeeeee;
 	text-align: center;
+	width: 400px;
+	height: 256px;
+	
 }
 
 .advantage-fourth h3{
@@ -168,6 +271,9 @@ a {
 .advantage-fifth {
 	background-color: #eeeeee;
 	text-align: center;
+	width: 400px;
+	height: 256px;
+
 }
 
 .advantage-fifth h3 {
@@ -183,13 +289,11 @@ a {
 	color: #333333;
 }
 
-.more-advantages {
-
-}
-
 .advantage-home {
     background-color: #ffffff;
 	text-align: center;
+	width: 400px;
+	height: 256px;
 }
 
 .advantage-home h3 {
@@ -208,6 +312,8 @@ a {
 .advantage-food {
     background-color: #ffffff;
 	text-align: center;
+	width: 400px;
+	height: 256px;
 }
 
 .advantage-food h3 {
@@ -226,6 +332,8 @@ a {
 .advantage-gift {
     background-color: #ffffff;
 	text-align: center;
+	width: 400px;
+	height: 256px;
 }
 
 .advantage-gift h3 {
@@ -400,6 +508,11 @@ a {
 
 }
 
+.footer-social ul {
+	margin: 0;
+	padding: 0;
+}
+
 .footer-social svg {
 	stroke: #81b3d2;
 }
@@ -441,6 +554,7 @@ a {
 .footer-social ul {
 	margin: 0 auto;
 	padding: 0;
+	list-style: none;
 }
 
 .social-button {
@@ -545,6 +659,7 @@ a {
 
 .button-info:active {
 	background-color: #5496bd;
+	color: rgba(253,253,253,0.3);
 }
 
 .button-booking {

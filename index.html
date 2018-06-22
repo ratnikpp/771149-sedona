@@ -8,31 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <header class="main-header">
+    
+      <div class="container">
       <nav class="main-navigation">
-      	<a class="main-header-logo" aria-label="Логотип Sedona">
-      	<img src="img/header-logo.png" width="140" height="72" alt="Логотип Sedona">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="info.html" aria-label="Информация">Информация</a>
+       <ul class="site-navigation">
+          <li><a class="site-navigation-info" href="info.html" aria-label="Информация">Информация</a>
           </li>
-          <li><a href="photovideo.html" aria-label="Фото и видео">Фото и видео</a>
+          <li><a class="site-navigation-photo" href="photovideo.html" aria-label="Фото и видео">Фото и видео</a>
           </li>
-          <li><a href="state-map.html" aria-label="Карта штата">Карта штата</a>
+          <li><a class="site-navigation-map" href="state-map.html" aria-label="Карта штата">Карта штата</a>
           </li>
-          <li><a href="hotels.html" aria-label="Гостиницы">Гостиницы</a>
+          <li><a class="site-navigation-hotels" href="hotels.html" aria-label="Гостиницы">Гостиницы</a>
           </li>	
         </ul>
       </nav>
-      <div class="caption"> 
-        <img src="img/welcom-sedona.png" width="458" height="352" alt="Welcom to the gorgeous Sedona">
+      </div>
+      <div class="header-logo"><img src="img/header-logo.png" alt="Логотип" width="138px" height="70px">
       </div>
     </header>
-      <main >
+
+      <main class="container">
+        <div class="caption-main">
+          <div class="main-header-logo"> 
+          <img src="img/welcom-sedona.png" alt="Welcom to the gorgeous Sedona">
+        </div>
+        </div>
         <div class="advantage-header">
             <h1>Седона-небольшой городок в Аризоне, заслуживающего большего!</h1>
             <p >Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </div>
+        </div>
         <section class="advantage">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantage-list">
@@ -42,15 +48,7 @@
               Седона-не аттракцион для туристов, там течёт своя жизнь</p>
             </li>
             <li class="advantage-picture">
-              <img src="img/city.jpg" width="800" height="254"  alt="Городок">
-            </li>
-          
-            <li class="advantage-picture">
-              <img src="img/canyon.jpg" width="800" height="254" alt="каньон"></li>
-              <li class="advantage-second">
-              <h3>Там есть мост дьявола</h3>
-              <p>-№2-
-              Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <img src="img/city.jpg" alt="Городок">
             </li>
             <li class="advantage-third">
               <h3>Небольшая площадь</h3>
@@ -67,29 +65,31 @@
               <p>-№5-
               Большинство едет в гранд каньон и толпится там</p>
             </li>
-            <li>
-              <ul class="more-advantages">
-                <li class="advantage-home">
-                  <img src="img/icon-1.svg" alt="Жильё">
-                  <h3>Жильё</h3>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
-                <li class="advantage-food">
-                  <img src="img/icon-3.svg" alt="Еда">
-                  <h3>Еда</h3>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="advantage-gift">
-                  <img src="img/icon-2.svg" alt="Сувениры">
-                  <h3>Сувениры</h3>
-                  <p>Не только китайского, но и местного<br> производства!</p>
-                </ul>
+            <li class="advantage-picture">
+              <img src="img/canyon.jpg" alt="Kаньон"></li>
+              <li class="advantage-second">
+              <h3>Там есть мост дьявола</h3>
+              <p>-№2-
+              Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </li>
+            <li class="advantage-home">
+              <img src="img/icon-1.svg" alt="Жильё">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
+            <li class="advantage-food">
+              <img src="img/icon-3.svg" alt="Еда">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="advantage-gift">
+              <img src="img/icon-2.svg" alt="Сувениры">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного<br> производства!</p>
+            </li>
             </ul>
           </section>
-
-        
-        <section class="search">
+          <section class="search">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, 
              и мы покажем вам лучшие  предложения гостиниц в седоне</p>
