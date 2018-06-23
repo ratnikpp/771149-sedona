@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	min-width: 1280px;
+	min-width: 768px;
 	
 
 	font-family: "PT Sans", Arial, sans-serif;
@@ -12,7 +12,7 @@ body {
 
 	background-color: #f2f2f2;
 	background-position: top center;
-	background-size: 1280 auto;
+	background-size: 1200 auto;
 	
 	background-repeat: no-repeat;
 }
@@ -65,6 +65,14 @@ img {
     position: relative; 
 }
 
+.header-logo {
+	display: block;
+	position: absolute;
+	margin: 0 auto;
+	width: 138px;
+	height: 70px;
+}
+
 .main-navigation {
 	line-height: 26px;
 	color: #000000;
@@ -76,12 +84,10 @@ img {
 .site-navigation {
 	margin: 0;
 	padding: 0;
-	height: 56px;
+	min-height: 56px;
     list-style: none;
     display: flex;
-	
 	width: 100%;
-	
 	flex-wrap: wrap;
 }
 
@@ -125,29 +131,35 @@ img {
 
 }
 
-.header-logo {
-	display: block;
-	position: absolute;
-	vertical-align: top;
-	
-}
 
 .caption-main {
-	height: 508px;
+	min-height: 508px;
 	display: flex;
 	justify-content: center;
 	
 	background-image: url("../img/background-photo.jpg");
-	
 	align-items: center;
-	margin: 0 auto; 
+	margin: 0 auto;
+	font-size: 0px;
+	width: 100%;
+	margin-bottom: 63px;
+
+
 }
 
 .advantage-header {
 	background-color: #ffffff;
 	text-align: center;
-	
+	display: flex;
+	justify-content: center;
+	margin-bottom: 53px;
+
 }
+
+.advantage-header-title {
+	min-width: 576px;
+}
+
 
 .advantage-header h1 {
 	font-size: 21px;
@@ -158,7 +170,8 @@ img {
 
 .advantage-header p {
 	line-height: 26px;
-	color: #333333; 
+	color: #333333;
+	margin: 0 auto; 
 }
   
 .advantage {
@@ -174,7 +187,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 1024px; 
-	margin-bottom: 0;
+	
 }
 
 
@@ -350,10 +363,18 @@ img {
 }
 
 .search {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     background-color: #ffffff;
     text-align: center;
+
+    
 }
 
+.search-title {
+	width: 576px;
+}
 .search h2 {
 	font-size: 30px;
 	line-height: 36px;
@@ -378,6 +399,8 @@ img {
 	line-height: 26px;
 	font-weight: 700;
     color: #ffffff;
+    width: 568px;
+    height: 86px;
 }
 
 .btn-search:hover,
@@ -396,6 +419,7 @@ img {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
+	width: 568px;
 }
 
 .search-form-row {
@@ -495,6 +519,15 @@ img {
 
 .main-footer {
 	background-color: #f9fbf6;
+	min-height: 120px;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	
+
+
+
 }
 
 .main-footer h3 {
@@ -502,77 +535,72 @@ img {
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+	
+	margin: 0;
+	padding: 48px; 
+	margin-left: 132px;
+	
 }
 
 .footer-social {
-
+	
+  
 }
 
 .footer-social ul {
-	margin: 0;
-	padding: 0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+
+  
+    list-style: none;
 }
 
-.footer-social svg {
-	stroke: #81b3d2;
+.social-button {
+    background-color: #81b3d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+
 }
 
-.footer-logo {
-
+.social-button:hover,
+.social-button:focus {
+	background-color: #669ec0;
 }
 
-.footer-logo a {
-	font-size: 14px;
-	line-height: 26px;
-	color: #000000;
+.social-button:active {
+	background-color: #5496bd;
 }
 
+.footer-copyright {
+	margin-right: 101px;
+ }
 
-.footer-logo svg {
+
+.footer-copyright svg{
 	width: 115px;
 	height: 41px;
 	fill: #231f20;
-	
-	
 }
 
-.footer-logo svg:hover,
-.footer-logo svg:focus {
+.footer-copyright svg:hover,
+.footer-copyright svg:focus {
 	fill: #81b3d2
 }
 
-.main-footer svg:active {
+.footer-copyright svg:active {
     fill: #bdbbbc;
 }
 
 
-.footer-social {
-	width: 148px;
-	text-align: center;
-}
 
-.footer-social ul {
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
-}
 
-.social-button {
-	width: 48px;
-	height: 46px;
-	text-align: center;
-
-	background-color: #81b3d2;
-}
-
-.social-button svg:hover,
-.social-button svg:focus {
-	background-color: #669ec0;
-}
-
-.social-button svg:active {
-	background-color: #5496bd;
-}
 
 
 #active {
@@ -679,4 +707,5 @@ img {
 .button-booking:active {
 	background-color: #503e33;
 }
+
 
