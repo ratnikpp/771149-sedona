@@ -460,7 +460,7 @@ z-index: 2;
 	
 	position: absolute;
 
-	z-index: 2;
+	z-index: 3;
 
 }
 
@@ -701,6 +701,15 @@ z-index: 2;
 	position: relative;
 }
 
+.map iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+}
+
+
+
 
 .main-footer {
 	width: 1200px;
@@ -709,6 +718,7 @@ z-index: 2;
     min-height: 120px;
 	background-color: rgba(249,251,246,0.9);
     position: absolute;
+    z-index: 4;
     bottom: 0;
     display: flex;
 }
