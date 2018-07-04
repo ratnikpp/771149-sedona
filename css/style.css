@@ -61,7 +61,36 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
   position: relative
-  box-shadow: -7px 0px 10px -9px #000000
+
+    -webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 5px 10px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
 }
 
 .main-navigation{
@@ -689,7 +718,7 @@ z-index: 2;
 
 .search-form-row input:hover,
 .search-form-row input:focus {
- background-color: #f2f2f2;
+ background-color: #ebebeb;
 }
 
 .search-form-row input:active {
@@ -873,11 +902,7 @@ z-index: 2;
     fill: #bdbbbc;
 }
 
-
-
 .filters {
-	
- 
 	width: 100%;
 	margin: 0 auto;
 	color: #ffffff;
@@ -923,13 +948,13 @@ z-index: 2;
 }
 
 
-.login-checkbox {
+.filter-checkbox {
 	position: relative;
 	padding-left: 40px;
     cursor: pointer;
 }
 
-.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -941,7 +966,7 @@ z-index: 2;
   background-repeat: no-repeat;
 }
 
-.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
 	top: 0;
   left: 0;
 
@@ -953,8 +978,26 @@ z-index: 2;
 
 }
 
+.filter-checkbox input:checked:disabled + .checkbox-indicator {
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/checkbox-block.svg")
+
+}
 
 
+.filter-checkbox input:disabled + .checkbox-indicator {
+  top: 0;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/checkbox-block2.svg")
+
+}
 
 .filter-range {
   width: 330px;
@@ -1068,6 +1111,11 @@ z-index: 2;
   left: 80%;
 }
 
+.range-toggle:focus {
+   background: #aeaeae
+}
+
+
 .btn-transparent {
   display: block;
   margin: 0 auto;
@@ -1102,9 +1150,7 @@ z-index: 2;
 .catalog {
 	width: 100%;
 	background-color: #fefefe;
-
 }
-
 
 .sorting {
 	display: flex;
@@ -1173,12 +1219,9 @@ z-index: 2;
 
 .catalog-item {
 	display: flex;
-	
-	
 	padding-right: 72px;
 	padding-left: 72px;
 	padding-top: 30px;
-	
 	border-bottom: 1px solid #e5e5e5;
 
 }
@@ -1193,6 +1236,7 @@ z-index: 2;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 9px;
+	cursor: pointer;
 }
 
 .catalog-item p {
@@ -1205,7 +1249,7 @@ z-index: 2;
 }
 
 .catalog-block-1 {
-	padding-left: 32px;
+	padding-left: 37px;
 }
 
 .catalog-block-2 {
@@ -1213,7 +1257,7 @@ z-index: 2;
 }
 
 .catalog-block-3 {
-	padding-left: 26px;
+	padding-left: 23px;
 }
 
 .button-info {
@@ -1269,13 +1313,20 @@ z-index: 2;
 	margin: 0;
 }
 
+.sorting-item a{
+	text-decoration: dotted underline;
+	color
+}
+
 .sorting-item a:hover,
 .sorting-item a:focus {
 	color: #81b3d2;
+
 }
 
 .sorting-item a:active {
 	color: #000000;
+	text-decoration: none;
 }
 
 .catalog-item h2 {
@@ -1295,6 +1346,24 @@ z-index: 2;
 }
 .catalog-item p {
 	color: #333333;
+}
+
+.icon-dir-up path:hover,
+.icon-dir-up path:focus {
+    fill: #231f20; 
+}
+
+.icon-dir-down path:hover,
+.icon-dir-down path:focus {
+    fill: #231f20; 
+}
+
+.icon-dir-up path:active {
+	fill: #81b3d2;
+}
+
+.icon-dir-down path:active {
+	fill: #81b3d2;
 }
 
 .button-info {
@@ -1332,6 +1401,7 @@ z-index: 2;
 
 .button-booking:active {
 	background-color: #503e33;
+	color: rgba(253,253,253,0.3);
 }
 
 
@@ -1354,7 +1424,6 @@ z-index: 2;
 	padding-top: 46px;
 }
 
-
 .site-navigation-hotels .navigation-active {
-	color: #cacaca;
+	color: #766357;
 }
