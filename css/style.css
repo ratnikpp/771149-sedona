@@ -60,8 +60,8 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-  position: relative
-  
+  position: relative;
+  display: block;
        
            
 }
@@ -86,9 +86,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-}
-.main-navigation{
+.main-navigation {
 	width: 100%;
 	background-color: #ffffff;
 }
@@ -909,7 +907,7 @@ z-index: 2;
 .filter {
 	display: flex;
 	padding-top: 28px;
-	padding-right: 73px;
+	
 	padding-left: 73px;
 
 
@@ -998,7 +996,7 @@ z-index: 2;
   width: 330px;
   color: #ffffff;
   text-transform: uppercase;
-  padding-left: 237px; 
+   margin-left: 223px;
 }
 
 .filter-range-title {
@@ -1036,9 +1034,8 @@ z-index: 2;
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
-  line-height: 38px;
+  line-height: 26px;
   vertical-align: top;
 
   cursor: pointer;
@@ -1053,7 +1050,7 @@ z-index: 2;
 .price-controls input {
   width: 50px;
   margin: 0;
-
+  
   color: inherit;
   font: inherit;
 
@@ -1106,11 +1103,6 @@ z-index: 2;
   left: 80%;
 }
 
-.range-toggle:focus {
-   background: #aeaeae
-}
-
-
 .btn-transparent {
   display: block;
   margin: 0 auto;
@@ -1135,11 +1127,6 @@ z-index: 2;
 
 
 
-.btn-transparent {
-	color: #ffffff;
-	border: 2px solid #ffffff;
-	text-transform: uppercase;
-}
 
 
 .catalog {
@@ -1154,7 +1141,7 @@ z-index: 2;
 	list-style: none;
 	padding-left: 71px;
 	padding-right: 73px;
-	padding-top: 29px;
+	padding-top: 30px;
 	padding-bottom: 29px;
 	align-items: center;
 	border-bottom: 1px solid #e5e5e5
@@ -1166,12 +1153,15 @@ z-index: 2;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
+	margin: 0;
 }
+
+
 .sorting-found {
 	font-size: 12px;
 	line-height: 18px;
 	color: #000000;
-	padding-left: 42px; 
+	padding-left: 48px; 
 }
 
 .sorting-price a {
@@ -1182,10 +1172,26 @@ z-index: 2;
 }
 
 .sorting-item a {
-	padding-left: 34px;
+	margin-left: 34px;
 	font-size: 12px;
 	line-height: 18px;
 	color: #cacaca;
+}
+
+
+.sorting-item a {
+	border-bottom: dotted;
+}
+
+.sorting-item a:hover,
+.sorting-item a:focus {
+	color: #81b3d2;
+}
+
+
+.sorting-item a:active {
+	color: #000000;
+	text-decoration: none;
 }
 
 .icon-dir-up {
@@ -1308,21 +1314,6 @@ z-index: 2;
 	margin: 0;
 }
 
-.sorting-item a{
-	text-decoration: dotted underline;
-	color
-}
-
-.sorting-item a:hover,
-.sorting-item a:focus {
-	color: #81b3d2;
-
-}
-
-.sorting-item a:active {
-	color: #000000;
-	text-decoration: none;
-}
 
 .catalog-item h2 {
 	font-size: 21px;
@@ -1401,7 +1392,7 @@ z-index: 2;
 
 
 .main-footer-inner {
-	width: 100%
+	width: 100%;
     min-height: 120px;
 	background-color: #fefefe;
      display: flex;
