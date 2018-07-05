@@ -724,9 +724,9 @@ z-index: 2;
 	font-weight: 700;
     color: #000000;
     padding: 0;
-   margin: 0;
-   padding-left: 12px;
-   padding-bottom: 6px;
+    margin: 0;
+    padding-left: 12px;
+    padding-bottom: 6px;
    }
 
    .search-form-row button {
@@ -800,7 +800,7 @@ z-index: 2;
 .number-abults input,
 .number-children input {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+   box-sizing: border-box;
    text-align: center;
 }
 
@@ -822,7 +822,6 @@ z-index: 2;
     fill: #cacaca;
 }
 
-
 .search-form-row:hover,
 .search-form-row:focus {
 	background-color: #ebebeb;
@@ -837,6 +836,10 @@ z-index: 2;
 	background-color: #ebebeb;
 }
 
+.search-form-row:active input {
+	background-color: #ffffff;
+}
+
 .search-form-row:hover .search-form-calendar,
 .search-form-row:focus .search-form-calendar {
 	background-color: #ebebeb;
@@ -846,9 +849,7 @@ z-index: 2;
 	background-color: #ffffff;
 }
 
-.search-form-row:active input {
-	background-color: #ffffff;
-}
+
 
 
 
@@ -867,14 +868,7 @@ z-index: 2;
 }
 
 
-.search-form-row input:hover,
-.search-form-row input:focus {
- background-color: #ebebeb;
-}
 
-.search-form-row input:active {
-	background-color: #ffffff;
-}
 
 .search-form-number input:hover,
 .search-form-number input:focus {
@@ -884,7 +878,6 @@ z-index: 2;
 .search-form-number input:active {
     background-color: #ffffff;
 }
-
 
 .btn-minus {
 	background-image: url("../img/minus.png");
