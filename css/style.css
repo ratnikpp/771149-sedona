@@ -699,6 +699,15 @@ z-index: 2;
 }
 
 
+.search-form-row:hover,
+.search-form-row:focus {
+	background-color: #ebebeb;
+}
+
+.search-form-row:active {
+	background-color: #ffffff;
+}
+
 .search-form-row svg:hover,
 .search-form-row svg:focus {
 	fill: #000000;
@@ -706,6 +715,11 @@ z-index: 2;
 
 .search-form-row svg:active {
 	fill: #81b3d2;
+}
+
+
+.search-form-row input {
+	border: none;
 }
 
 
