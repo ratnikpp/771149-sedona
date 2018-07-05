@@ -812,12 +812,11 @@ z-index: 2;
 	background-color: #f2f2f2;
 }
 
-.search-form-field:hover,
-.search-form-field:focus {
-	background-color: #f2f2f2;
+.search-form-field:hover {
+	background-color: #ebebeb;
 }
 
-.search-form-field:active {
+.search-form-field:focus {
 	background-color: #ffffff;
 }
 
@@ -825,30 +824,28 @@ z-index: 2;
     fill: #cacaca;
 }
 
-.search-form-row:hover,
+
+.search-form-row:hover {
+	background-color: #ebebeb;
+}
+
 .search-form-row:focus {
-	background-color: #ebebeb;
-}
-
-.search-form-row:active {
 	background-color: #ffffff;
 }
 
-.search-form-row:hover input,
-.search-form-row:focus input {
+.search-form-row input:hover {
 	background-color: #ebebeb;
 }
 
-.search-form-row:active input {
+.search-form-row input:focus {
 	background-color: #ffffff;
 }
 
-.search-form-row:hover .search-form-calendar,
+.search-form-row:hover .search-form-calendar {
+	background-color: #ebebeb;
+}
+
 .search-form-row:focus .search-form-calendar {
-	background-color: #ebebeb;
-}
-
-.search-form-row:active .search-form-calendar {
 	background-color: #ffffff;
 }
 
@@ -871,16 +868,6 @@ z-index: 2;
 }
 
 
-
-
-.search-form-number input:hover,
-.search-form-number input:focus {
-    background-color: #ebebeb;
-}
-
-.search-form-number input:active {
-    background-color: #ffffff;
-}
 
 .btn-minus {
 	background-image: url("../img/minus.png");
@@ -1186,7 +1173,12 @@ z-index: 2;
 
 .price-controls {
   position: relative;
-  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 36px;
   margin-bottom: 20px;
 
@@ -1214,9 +1206,7 @@ z-index: 2;
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 26px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -1535,6 +1525,10 @@ z-index: 2;
 }
 .catalog-item p {
 	color: #333333;
+}
+
+.icon-dir-down path:a {
+	fill: #81b3d2;
 }
 
 .icon-dir-up path:hover,
